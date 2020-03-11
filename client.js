@@ -31,6 +31,40 @@ const employees = [
   }
 ];
 
+function employeeBonus() {
+  for (let employee of employees) {
+    console.log(employee);
+    console.log(employeeBonusObject(employee));
+
+    // if (employee.reviewRating <= 2) {
+    //   return 'no bonus';
+    //   // } else if(employee) {
+
+    //   // }
+    // }
+  }
+}
+
+function employeeBonusObject(employee) {
+  return {
+    name: employee.name,
+    bonusPercentage: employee.bonusPercentage,
+    totalCompensation: employee.annualSalary,
+    totalBonus: employee.totalBonus,
+    reviewRating: employee.reviewRating
+  };
+}
+
+//bonus calculation Myron will be recording this so pay attention
+function bonusCalc(employee) {
+  if (reviewRating <= 2) {
+    console.log('No bonus for you this');
+  }
+}
+
+employeeBonus();
+//take employee object and return a new object
+
 // YOU SHOULD NOT NEED TO CHANGE ANYTHING ABOVE THIS POINT
 
 // Take small steps! Don't write a for loop and two functions that do all of the calculations right away.
@@ -40,4 +74,4 @@ const employees = [
 // This is not a race. Everyone on your team should understand what is happening.
 // Ask questions when you don't.
 
-console.log( employees );
+// console.log(employees);
